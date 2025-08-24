@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Interview Prep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interview Prep</h1>
+        <div class="language-selector">
+            <button onclick="selectLanguage('java')">Java</button>
+            <button onclick="selectLanguage('cpp')">C++</button>
+            <button onclick="selectLanguage('python')">Python</button>
+        </div>
+        <div id="quiz-section" style="display: none;">
+            <h2 id="language-title"></h2>
+            <p id="score">Score: 0 / 50</p>
+            <p id="question"></p>
+            <div id="options"></div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
